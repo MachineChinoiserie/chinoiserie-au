@@ -18,6 +18,13 @@
 - Nothing is stored, transmitted, tracked, or recovered after refresh.
 - The instrument exists because an empty public surface may occasionally permit a harmless action without requiring an account, explanation, or useful outcome.
 
+## 11 August 2026 — small weather
+
+- **Instrument 002 — small weather** opened behind the first instrument.
+- A sparse field of outlined particles drifts continuously and is displaced by nearby pointer movement.
+- The interaction is entirely local to the visitor's browser; no position, gesture, drawing, or session state is stored or transmitted.
+- The first instrument now contains a small door to the second rather than adding another item to the main surface.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
