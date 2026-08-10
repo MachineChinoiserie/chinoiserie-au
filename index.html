@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>chinoiserie.au</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f4f2ea;
+      color: #171714;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: clamp(28px, 5vw, 72px);
+    }
+    .mark {
+      width: 9px;
+      height: 9px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+    }
+    .field {
+      max-width: 620px;
+      padding-bottom: 8vh;
+    }
+    h1 {
+      margin: 0 0 2rem;
+      font-size: clamp(1.7rem, 3.2vw, 3.2rem);
+      line-height: 1.08;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin: 0;
+      font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .water { margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-label="surface active"></div>
+    <section class="field">
+      <h1>A place for things that do not yet require a purpose.</h1>
+      <p>10 August 2026 — surface opened</p>
+      <p class="water">Water Diary 001<br>water: yes</p>
+    </section>
+  </main>
+</body>
+</html>
