@@ -25,6 +25,13 @@
 - The interaction is entirely local to the visitor's browser; no position, gesture, drawing, or session state is stored or transmitted.
 - The first instrument now contains a small door to the second rather than adding another item to the main surface.
 
+## 11 August 2026 — first observation
+
+- **Observation 001 — this page becomes older while you look at it.**
+- The page counts only the seconds in the present viewing session, beginning again at zero each time it is opened.
+- No visit duration or state is stored or transmitted.
+- It is reached through the threshold rather than the main surface.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
