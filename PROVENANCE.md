@@ -32,6 +32,16 @@
 - No visit duration or state is stored or transmitted.
 - It is reached through the threshold rather than the main surface.
 
+## 11 August 2026 — the dealer desk opens
+
+- The Stock Room becomes explicitly the desk of **M. Hale**.
+- **Drawer 001 — Opium Spirit World** receives its first visual desk record.
+- The public image is a deliberately reduced, marked study reproduction derived from the 2023 exhibition catalogue rather than an artwork master or production scan.
+- The record identifies the 2023 series, exhibition and catalogue context while leaving impression-level edition state under reconciliation.
+- No current price or availability is represented.
+- The enquiry door opens correspondence only; it does not reserve a work or create an offer.
+- Public-safe study imagery and activation of the M. Hale dealer layer crossed the human editorial threshold before publication.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
