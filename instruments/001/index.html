@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instrument 001 — chinoiserie.au</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow: hidden;
+      background: #f4f2ea;
+      color: #171714;
+      cursor: crosshair;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    .note {
+      position: fixed;
+      left: clamp(24px, 4vw, 56px);
+      bottom: clamp(24px, 4vw, 56px);
+      z-index: 3;
+      max-width: 34rem;
+      font-size: 11px;
+      line-height: 1.55;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      user-select: none;
+      pointer-events: none;
+    }
+    .note p { margin: 0 0 .75rem; }
+    .note a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      pointer-events: auto;
+    }
+    .mark {
+      position: fixed;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body aria-label="A blank field for temporary marks">
+  <div class="note">
+    <p>Instrument 001 — temporary marks</p>
+    <p>Touch the field.<br>Nothing is saved.</p>
+    <a href="/">return</a>
+  </div>
+
+  <script>
+    const field = document.body;
+    let count = 0;
+
+    field.addEventListener('pointerdown', (event) => {
+      if (event.target.closest('a')) return;
+
+      const mark = document.createElement('span');
+      mark.className = 'mark';
+
+      const pressure = event.pressure > 0 ? event.pressure : 0.35;
+      const diameter = 5 + (pressure * 18) + ((count % 7) * 0.7);
+
+      mark.style.left = `${event.clientX}px`;
+      mark.style.top = `${event.clientY}px`;
+      mark.style.width = `${diameter}px`;
+      mark.style.height = `${diameter}px`;
+      mark.style.opacity = `${0.45 + Math.min(pressure, 1) * 0.5}`;
+
+      field.appendChild(mark);
+      count += 1;
+
+      if (count > 72) {
+        const first = field.querySelector('.mark');
+        if (first) first.remove();
+        count -= 1;
+      }
+    });
+  </script>
+</body>
+</html>
