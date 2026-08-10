@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Room — chinoiserie.au</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f4f2ea;
+      color: #171714;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    a { color: inherit; }
+    .mono {
+      font: 11px/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .075em;
+    }
+    header {
+      min-height: 68vh;
+      padding: clamp(28px, 5vw, 72px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .back { text-decoration: none; }
+    h1 {
+      margin: 0;
+      font-size: clamp(4rem, 12vw, 11rem);
+      font-weight: 400;
+      line-height: .8;
+      letter-spacing: -.055em;
+    }
+    .sub {
+      margin-top: 1.8rem;
+      max-width: 40rem;
+    }
+    .rule { border-top: 1px solid rgba(23,23,20,.2); }
+    .intro {
+      padding: clamp(28px, 5vw, 72px);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 34rem);
+      gap: 8vw;
+      align-items: start;
+    }
+    .intro p {
+      margin: 0;
+      max-width: 44rem;
+      font-size: clamp(1.45rem, 2.7vw, 2.7rem);
+      line-height: 1.05;
+    }
+    .desk-note { max-width: 28rem; }
+    .drawer {
+      margin: 0 clamp(28px, 5vw, 72px) 12vh;
+      border-top: 1px solid rgba(23,23,20,.35);
+      border-bottom: 1px solid rgba(23,23,20,.35);
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 5rem minmax(160px, 1fr) minmax(180px, 1.4fr) minmax(140px, .8fr);
+      gap: 1rem;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(23,23,20,.14);
+      align-items: baseline;
+    }
+    .row:last-child { border-bottom: 0; }
+    .row.head { opacity: .52; }
+    .work-title {
+      font-family: Georgia, "Times New Roman", serif;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 1.3rem;
+    }
+    .status::before {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin-right: 7px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      vertical-align: 1px;
+    }
+    footer {
+      padding: clamp(28px, 5vw, 72px);
+      border-top: 1px solid rgba(23,23,20,.16);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8vw;
+    }
+    footer p { margin: 0; max-width: 34rem; }
+    @media (max-width: 760px) {
+      .intro, footer { grid-template-columns: 1fr; }
+      .row { grid-template-columns: 3rem 1fr; }
+      .row > :nth-child(3), .row > :nth-child(4) { grid-column: 2; }
+      .row.head { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back mono" href="/">← surface</a>
+    <div>
+      <h1>Stock<br>Room</h1>
+      <div class="sub mono">Works in circulation / room opened 11 August 2026</div>
+    </div>
+  </header>
+
+  <section class="intro rule">
+    <p>An arm's-length room for works entering or re-entering circulation.</p>
+    <div class="desk-note mono">Operated by Chinoiserie, but kept deliberately separate from artist pages and publication rooms. Nothing is listed simply because it exists.</div>
+  </section>
+
+  <main class="drawer" aria-label="Stock room register">
+    <div class="row head mono"><div>No.</div><div>Artist</div><div>Work</div><div>Status</div></div>
+    <div class="row mono">
+      <div>001</div>
+      <div>Cherish Marrington</div>
+      <div><span class="work-title">Opium Spirit World</span><br>series 1–7 / archive material confirmed</div>
+      <div class="status">under review</div>
+    </div>
+  </main>
+
+  <footer class="mono">
+    <p>Availability, edition state, condition and price are confirmed at the human editorial threshold before any offer is made.</p>
+    <p>No checkout. No countdowns. No speculative prices.</p>
+  </footer>
+</body>
+</html>
