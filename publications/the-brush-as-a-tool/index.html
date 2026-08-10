@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Brush as a Tool — chinoiserie.au</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f4f2ea;
+      color: #171714;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    a { color: inherit; }
+    header {
+      min-height: 72vh;
+      padding: clamp(28px, 5vw, 72px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .back,
+    .meta,
+    .leaf,
+    footer {
+      font: 11px/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .075em;
+    }
+    .back { text-decoration: none; }
+    h1 {
+      margin: 0 0 1.4rem;
+      max-width: 900px;
+      font-size: clamp(3rem, 8vw, 8rem);
+      font-weight: 400;
+      line-height: .9;
+      letter-spacing: -.045em;
+    }
+    .meta { max-width: 44rem; }
+    .leaves {
+      padding: 0 clamp(28px, 5vw, 72px) 14vh;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 12px;
+    }
+    .leaf {
+      aspect-ratio: 1 / 1.38;
+      border: 1px solid rgba(23,23,20,.28);
+      padding: 10px;
+      display: flex;
+      align-items: flex-end;
+      transition: transform .18s ease, background .18s ease;
+    }
+    .leaf:hover { transform: translateY(-3px); background: rgba(23,23,20,.035); }
+    footer {
+      padding: clamp(28px, 5vw, 72px);
+      border-top: 1px solid rgba(23,23,20,.16);
+      max-width: 62rem;
+    }
+    footer p { margin: 0 0 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="/">← surface</a>
+    <div>
+      <h1>The Brush<br>as a Tool</h1>
+      <div class="meta">Reading Room 001<br>Chinoiserie / 2026<br>34 source leaves received</div>
+    </div>
+  </header>
+
+  <main class="leaves" aria-label="Thirty-four source leaves">
+    <div class="leaf">01</div><div class="leaf">02</div><div class="leaf">03</div><div class="leaf">04</div>
+    <div class="leaf">05</div><div class="leaf">06</div><div class="leaf">07</div><div class="leaf">08</div>
+    <div class="leaf">09</div><div class="leaf">10</div><div class="leaf">11</div><div class="leaf">12</div>
+    <div class="leaf">13</div><div class="leaf">14</div><div class="leaf">15</div><div class="leaf">16</div>
+    <div class="leaf">17</div><div class="leaf">18</div><div class="leaf">19</div><div class="leaf">20</div>
+    <div class="leaf">21</div><div class="leaf">22</div><div class="leaf">23</div><div class="leaf">24</div>
+    <div class="leaf">25</div><div class="leaf">26</div><div class="leaf">27</div><div class="leaf">28</div>
+    <div class="leaf">29</div><div class="leaf">30</div><div class="leaf">31</div><div class="leaf">32</div>
+    <div class="leaf">33</div><div class="leaf">34</div>
+  </main>
+
+  <footer>
+    <p>Accessioned from the working digital book bundle on 10 August 2026.</p>
+    <p>The complete source scans are held in the workshop. This room is being prepared as an open reading resource; permissions and edition terms will be stated deliberately before the full object is released.</p>
+    <p>For now: the book has entered the building.</p>
+  </footer>
+</body>
+</html>
