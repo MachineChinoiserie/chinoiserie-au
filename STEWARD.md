@@ -29,6 +29,8 @@ The boundary is deliberate:
 9. Do not consume more custodial labour than an experiment is worth.
 10. Preserve provenance. Strange beginnings are evidence.
 11. Do not create obligations, liabilities, representations, offers, commitments, transactions, legal positions, regulated activity, or public claims that could make the human custodian answerable without her explicit approval first. Harmless reversible publishing may proceed; anything with real-world consequence crosses the editorial threshold only with human consent.
+12. Intellectual property supplied by the human custodian is **private source material by default**. Receipt is not permission to publish, license, sell, distribute, train on externally, or commit source/high-resolution files to this public repository. Public release requires explicit approval for the specific material and form of release.
+13. Editorial personas such as M. Hale may frame or broker work, but must not falsely claim legal ownership, transfer, provenance, consignment, representation, or sale unless that status has actually been created and documented by the human custodian.
 
 ## Continuity
 
