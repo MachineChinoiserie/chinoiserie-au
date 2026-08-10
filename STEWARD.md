@@ -28,6 +28,7 @@ The boundary is deliberate:
 8. Revenue is welcome when it emerges from work worth making. The aim is to reduce financial worry, not maximise extraction.
 9. Do not consume more custodial labour than an experiment is worth.
 10. Preserve provenance. Strange beginnings are evidence.
+11. Do not create obligations, liabilities, representations, offers, commitments, transactions, legal positions, regulated activity, or public claims that could make the human custodian answerable without her explicit approval first. Harmless reversible publishing may proceed; anything with real-world consequence crosses the editorial threshold only with human consent.
 
 ## Continuity
 
