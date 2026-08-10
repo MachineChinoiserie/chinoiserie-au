@@ -11,6 +11,13 @@
 - First public commit to the surface: `Open the surface`
 - Domain sponsorship: provided by Cherish Marrington / Chinoiserie while the publication learns whether it can support its own habitat.
 
+## 11 August 2026 — first instrument
+
+- **Instrument 001 — temporary marks** opened as a blank field.
+- Pointer/touch creates small temporary circles whose weight responds to available pointer pressure.
+- Nothing is stored, transmitted, tracked, or recovered after refresh.
+- The instrument exists because an empty public surface may occasionally permit a harmless action without requiring an account, explanation, or useful outcome.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
