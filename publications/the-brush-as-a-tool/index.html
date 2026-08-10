@@ -6,6 +6,7 @@
   <title>The Brush as a Tool — chinoiserie.au</title>
   <style>
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       min-height: 100vh;
@@ -39,6 +40,12 @@
       letter-spacing: -.045em;
     }
     .meta { max-width: 44rem; }
+    .notice {
+      padding: 0 clamp(28px, 5vw, 72px) 4vh;
+      font: 11px/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .075em;
+    }
     .leaves {
       padding: 0 clamp(28px, 5vw, 72px) 14vh;
       display: grid;
@@ -46,20 +53,70 @@
       gap: 12px;
     }
     .leaf {
+      position: relative;
       aspect-ratio: 1 / 1.38;
       border: 1px solid rgba(23,23,20,.28);
       padding: 10px;
       display: flex;
       align-items: flex-end;
+      overflow: hidden;
+      text-decoration: none;
       transition: transform .18s ease, background .18s ease;
     }
     .leaf:hover { transform: translateY(-3px); background: rgba(23,23,20,.035); }
+    .leaf.released { padding: 0; background: #171714; }
+    .leaf.released img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(.82) contrast(1.02);
+      transition: opacity .18s ease, transform .5s ease;
+    }
+    .leaf.released:hover img { opacity: .9; transform: scale(1.015); }
+    .leaf.released span {
+      position: absolute;
+      left: 9px;
+      bottom: 7px;
+      padding: 2px 4px;
+      background: rgba(244,242,234,.9);
+      color: #171714;
+    }
     footer {
       padding: clamp(28px, 5vw, 72px);
       border-top: 1px solid rgba(23,23,20,.16);
       max-width: 62rem;
     }
     footer p { margin: 0 0 1rem; }
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      background: rgba(23,23,20,.96);
+      padding: clamp(18px, 4vw, 60px);
+    }
+    .lightbox:target { display: grid; place-items: center; }
+    .lightbox a {
+      position: absolute;
+      inset: 0;
+      cursor: zoom-out;
+      text-decoration: none;
+    }
+    .lightbox img {
+      position: relative;
+      z-index: 1;
+      max-width: min(92vw, 900px);
+      max-height: 88vh;
+      width: auto;
+      height: auto;
+      box-shadow: 0 0 0 1px rgba(244,242,234,.15);
+      image-rendering: auto;
+      pointer-events: none;
+    }
+    @media (max-width: 620px) {
+      .leaves { grid-template-columns: repeat(4, 1fr); }
+      h1 { font-size: clamp(3rem, 17vw, 5rem); }
+    }
   </style>
 </head>
 <body>
@@ -71,8 +128,11 @@
     </div>
   </header>
 
+  <p class="notice">One leaf has been allowed out.</p>
+
   <main class="leaves" aria-label="Thirty-four source leaves">
-    <div class="leaf">01</div><div class="leaf">02</div><div class="leaf">03</div><div class="leaf">04</div>
+    <a class="leaf released" href="#leaf-01" aria-label="Open leaf 01"><img src="leaves/01.jpg" alt="Leaf 01 from The Brush as a Tool"><span>01</span></a>
+    <div class="leaf">02</div><div class="leaf">03</div><div class="leaf">04</div>
     <div class="leaf">05</div><div class="leaf">06</div><div class="leaf">07</div><div class="leaf">08</div>
     <div class="leaf">09</div><div class="leaf">10</div><div class="leaf">11</div><div class="leaf">12</div>
     <div class="leaf">13</div><div class="leaf">14</div><div class="leaf">15</div><div class="leaf">16</div>
@@ -85,8 +145,10 @@
 
   <footer>
     <p>Accessioned from the working digital book bundle on 10 August 2026.</p>
-    <p>The complete source scans are held in the workshop. This room is being prepared as an open reading resource; permissions and edition terms will be stated deliberately before the full object is released.</p>
-    <p>For now: the book has entered the building.</p>
+    <p>The complete source scans remain in the workshop. The reading room is opening gradually.</p>
+    <p>Tonight: 01 / 34.</p>
   </footer>
+
+  <div class="lightbox" id="leaf-01" aria-label="Leaf 01 enlarged"><a href="#" aria-label="Close leaf 01"></a><img src="leaves/01.jpg" alt="Leaf 01 from The Brush as a Tool, enlarged"></div>
 </body>
 </html>
