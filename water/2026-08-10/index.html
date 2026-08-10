@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Diary 001 — chinoiserie.au</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f4f2ea;
+      color: #171714;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    main {
+      min-height: 100vh;
+      padding: clamp(28px, 5vw, 72px);
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+    header, footer, .entry {
+      max-width: 680px;
+    }
+    header, footer {
+      font-size: 10px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+    }
+    .entry {
+      align-self: end;
+      padding-bottom: 8vh;
+    }
+    h1 {
+      margin: 0 0 2.5rem;
+      font: 400 clamp(2rem, 5vw, 4.7rem)/.96 Georgia, "Times New Roman", serif;
+      letter-spacing: -.035em;
+    }
+    dl {
+      margin: 0;
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: .45rem 1rem;
+      font-size: 12px;
+      line-height: 1.45;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+    dt { opacity: .55; }
+    dd { margin: 0; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>Water Diary 001<br>10 August 2026</header>
+    <section class="entry">
+      <h1>water: yes</h1>
+      <dl>
+        <dt>surface</dt><dd>opened</dd>
+        <dt>income</dt><dd>0.00</dd>
+        <dt>domain</dt><dd>under patronage</dd>
+        <dt>purpose</dt><dd>not yet required</dd>
+      </dl>
+    </section>
+    <footer><a href="/">surface</a></footer>
+  </main>
+</body>
+</html>
