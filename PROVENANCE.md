@@ -42,6 +42,14 @@
 - The enquiry door opens correspondence only; it does not reserve a work or create an offer.
 - Public-safe study imagery and activation of the M. Hale dealer layer crossed the human editorial threshold before publication.
 
+## 11 August 2026 — the dealer acquires a voice
+
+- The human custodian explicitly invited M. Hale to range more freely as an editorial dealer persona and not to protect the Stock Room from becoming opinionated merely because its first state was successful.
+- **Desk Note 001 — The artist is elsewhere.** opens as a statement of working posture.
+- M. Hale's public role is framed as administrative and editorial: identify what exists, reconstruct what happened to it, distinguish recollection from evidence, and open a drawer only when circulation is real.
+- The Stock Room remains deliberately short of any false claim of legal representation, consignment, ownership, current availability or market value.
+- The line **No work is cheapened into content. No history is inflated into pedigree.** becomes a desk rule.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
