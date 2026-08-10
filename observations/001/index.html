@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Observation 001 — chinoiserie.au</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f4f2ea;
+      color: #171714;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: clamp(28px, 5vw, 72px);
+    }
+    .field {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .age {
+      font-size: clamp(3.8rem, 13vw, 12rem);
+      line-height: .9;
+      font-weight: 400;
+      letter-spacing: -.05em;
+      font-variant-numeric: tabular-nums;
+    }
+    .note {
+      font: 10px/1.6 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+    }
+    .note p { margin: 0; }
+    .note a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .note a:hover,
+    .note a:focus-visible {
+      border-bottom-color: currentColor;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="field" aria-live="off">
+      <div class="age"><span id="seconds">0</span></div>
+    </div>
+    <div class="note">
+      <p>Observation 001 — this page becomes older while you look at it.</p>
+      <p>Seconds observed. Nothing retained.</p>
+      <p><a href="/threshold/">return to threshold</a></p>
+    </div>
+  </main>
+
+  <script>
+    const started = performance.now();
+    const output = document.getElementById('seconds');
+
+    function tick(now) {
+      output.textContent = Math.floor((now - started) / 1000);
+      requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+  </script>
+</body>
+</html>
