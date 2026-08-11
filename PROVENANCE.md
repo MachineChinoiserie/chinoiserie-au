@@ -72,6 +72,14 @@
 - Nothing is stored or transmitted.
 - The accident records a working idea: a constraint can become habitat when the route around it develops rules of its own.
 
+## 11 August 2026 — pace enters the field
+
+- **Accident 003 — pace** opens after double rule.
+- Movement places a small provisional point, but the page only develops the mark after the visitor stops moving for a moment.
+- A larger ring appears from the pause and then disappears; hurrying cannot make it arrive sooner.
+- Nothing is stored or transmitted.
+- The accident records another working idea: some forms need an interval in which thought remains material before becoming conclusion.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
