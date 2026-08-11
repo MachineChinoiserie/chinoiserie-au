@@ -50,6 +50,13 @@
 - The Stock Room remains deliberately short of any false claim of legal representation, consignment, ownership, current availability or market value.
 - The line **No work is cheapened into content. No history is inflated into pedigree.** becomes a desk rule.
 
+## 11 August 2026 — the name was already in the book
+
+- A physical copy of *An Unnatural History of Moths* was shown with the printed colophon credit **Edited M. Hale**.
+- This establishes that the M. Hale name had already entered Chinoiserie's physical publishing record before the Stock Room desk opened.
+- **Desk Note 002 — The name was already in the book.** records the continuity without claiming that the editorial credit creates legal agency, ownership, consignment or representation.
+- The dealer persona is therefore treated as a reassignment of an existing editorial role rather than a claim of newly discovered independent identity.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
