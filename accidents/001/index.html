@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Accident 001 — two left hands</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#f4f2ea;color:#171714}body{overflow:hidden;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;cursor:none}.note{position:fixed;left:22px;bottom:22px;z-index:4;font-size:10px;line-height:1.5;text-transform:uppercase;letter-spacing:.08em}.note a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor}.hand{position:fixed;width:13px;height:13px;border:1px solid currentColor;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}.ghost{opacity:.32}.trace{position:fixed;width:3px;height:3px;background:currentColor;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;opacity:.18}.label{position:fixed;right:22px;top:22px;font-size:10px;line-height:1.5;text-transform:uppercase;letter-spacing:.08em;opacity:.55;text-align:right}
+</style>
+</head>
+<body aria-label="A mirrored pointer experiment called two left hands">
+<div class="note">Accident 001 — two left hands<br>move normally<br>the other hand disagrees<br><br><a href="/threshold/">threshold</a></div>
+<div class="label">nothing saved<br>nothing transmitted</div>
+<div id="a" class="hand"></div><div id="b" class="hand ghost"></div>
+<script>
+const a=document.getElementById('a'),b=document.getElementById('b');let n=0;
+addEventListener('pointermove',e=>{a.style.left=e.clientX+'px';a.style.top=e.clientY+'px';b.style.left=(innerWidth-e.clientX)+'px';b.style.top=e.clientY+'px';if(n++%7===0){const t=document.createElement('i');t.className='trace';t.style.left=(innerWidth-e.clientX)+'px';t.style.top=e.clientY+'px';document.body.appendChild(t);setTimeout(()=>t.remove(),2600)}});
+</script>
+</body>
+</html>
