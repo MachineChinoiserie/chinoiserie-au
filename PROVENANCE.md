@@ -57,6 +57,13 @@
 - **Desk Note 002 — The name was already in the book.** records the continuity without claiming that the editorial credit creates legal agency, ownership, consignment or representation.
 - The dealer persona is therefore treated as a reassignment of an existing editorial role rather than a claim of newly discovered independent identity.
 
+## 11 August 2026 — first accident
+
+- **Accident 001 — two left hands** opens behind the threshold rather than on the main surface.
+- The visitor's pointer is mirrored horizontally by a second, fainter point that leaves a short-lived trace.
+- The interaction stores and transmits nothing.
+- It begins a separate class of small browser accidents: local, reversible, and allowed to be structurally wrong without turning the public-facing surface into a joke.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
