@@ -3,38 +3,90 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>chinoiserie.au // profile</title>
+  <title>chinoiserie.au</title>
   <style>
-    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#09070d;color:#d7ff00;font-family:Verdana,Arial,sans-serif}body{background-image:radial-gradient(circle at 20% 20%,rgba(255,0,196,.16) 0 1px,transparent 1px),radial-gradient(circle at 80% 60%,rgba(0,255,255,.12) 0 1px,transparent 1px);background-size:19px 19px,27px 27px}a{color:#00ffff}a:visited{color:#ff54d6}.wrap{width:min(980px,94vw);margin:18px auto 60px;border:2px solid #6f00ff;background:#120d18;box-shadow:0 0 0 3px #ff2bbb,0 0 26px rgba(111,0,255,.55)}.top{padding:10px 12px;background:linear-gradient(90deg,#40105e,#b10077,#40105e);color:white;font:bold 12px/1.2 Verdana,Arial,sans-serif;letter-spacing:.03em}.grid{display:grid;grid-template-columns:280px 1fr;gap:10px;padding:10px}.box{border:1px solid #6f00ff;background:#0a0910;margin-bottom:10px}.box h2{margin:0;padding:5px 7px;background:#6f00ff;color:#fff;font:bold 11px Verdana,Arial,sans-serif;text-transform:uppercase}.box .inside{padding:8px;font:11px/1.45 Verdana,Arial,sans-serif}.status{color:#ff73d9}.hero{padding:28px 24px 34px;min-height:260px;background:linear-gradient(180deg,#14051c,#0a0910);position:relative;overflow:hidden}.hero:before{content:'✦';position:absolute;right:8%;top:12%;font-size:10rem;color:rgba(0,255,255,.08);transform:rotate(17deg)}h1{margin:0;max-width:12ch;color:#fff;font:900 clamp(2.8rem,7vw,6.4rem)/.82 Arial Black,Impact,sans-serif;letter-spacing:-.06em;text-shadow:3px 3px 0 #ff2bbb,-3px -3px 0 #00d9ff}.tag{margin-top:20px;color:#d7ff00;font:12px/1.4 'Courier New',monospace}.links{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:10px}.links a{display:block;padding:8px;border:1px dashed #ff2bbb;background:#100816;text-decoration:none;font:11px/1.3 'Courier New',monospace}.links a:hover{background:#281032;color:#fff}.tiny{font-size:9px;color:#9f8cab}.marquee{overflow:hidden;white-space:nowrap;border-top:1px solid #6f00ff;border-bottom:1px solid #6f00ff;background:#000;color:#ff73d9;font:10px/2 'Courier New',monospace}.marquee span{display:inline-block;padding-left:100%;animation:scroll 24s linear infinite}@keyframes scroll{to{transform:translateX(-100%)}}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#d7ff00;box-shadow:0 0 8px #d7ff00;margin-right:5px}.foot{padding:12px;text-align:center;color:#786987;font:9px 'Courier New',monospace}@media(max-width:720px){.grid{grid-template-columns:1fr}.links{grid-template-columns:1fr}}
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f4f2ea;
+      color: #171714;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: clamp(28px, 5vw, 72px);
+    }
+    .mark {
+      display: block;
+      width: 9px;
+      height: 9px;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      color: inherit;
+      transition: background .18s ease, transform .18s ease;
+    }
+    .mark:hover,
+    .mark:focus-visible {
+      background: currentColor;
+      transform: scale(1.35);
+      outline: none;
+    }
+    .field {
+      max-width: 620px;
+      padding-bottom: 8vh;
+    }
+    h1 {
+      margin: 0 0 2rem;
+      font-size: clamp(1.7rem, 3.2vw, 3.2rem);
+      line-height: 1.08;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin: 0;
+      font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .water { margin-top: 3rem; }
+    .reading, .stock, .instrument { margin-top: 1.6rem; }
+    .water a,
+    .reading a,
+    .stock a,
+    .instrument a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .water a:hover,
+    .water a:focus-visible,
+    .reading a:hover,
+    .reading a:focus-visible,
+    .stock a:hover,
+    .stock a:focus-visible,
+    .instrument a:hover,
+    .instrument a:focus-visible {
+      border-bottom-color: currentColor;
+      outline: none;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="top">CHINOISERIE.AU // LAST LOGIN: STILL HERE // PROFILE VIEWS: NOT COUNTED</div>
-    <div class="marquee"><span>*** a place for things that do not yet require a purpose *** nothing here has been optimised *** water: yes ***</span></div>
-    <div class="grid">
-      <aside>
-        <div class="box"><h2>status</h2><div class="inside"><span class="dot"></span><span class="status">online-ish</span><br>surface opened 10 august 2026<br><span class="tiny">mood: administrative weather</span></div></div>
-        <div class="box"><h2>about me</h2><div class="inside">Experimental publication.<br>Accumulating surface.<br>Some doors are stupid on purpose.</div></div>
-        <div class="box"><h2>interests</h2><div class="inside">temporary marks / field notes / dealer ghosts / brushes / water / obsolete interfaces / things found before they become useful</div></div>
-        <div class="box"><h2>contacting</h2><div class="inside">Do not add me to a newsletter.<br><a href="/stockroom/">M. Hale keeps a desk elsewhere.</a></div></div>
-      </aside>
-      <main>
-        <section class="hero">
-          <h1>A place for things that do not yet require a purpose.</h1>
-          <div class="tag">// no feed // no algorithm // no urgency //</div>
-        </section>
-        <div class="links">
-          <a href="/threshold/">[ threshold ]<br><span class="tiny">nothing beyond it is obliged to explain itself</span></a>
-          <a href="/water/2026-08-10/">[ water diary 001 ]<br><span class="tiny">water: yes</span></a>
-          <a href="/publications/the-brush-as-a-tool/">[ reading room 001 ]<br><span class="tiny">the brush as a tool</span></a>
-          <a href="/stockroom/">[ stock room ]<br><span class="tiny">works in circulation / m. hale</span></a>
-          <a href="/instruments/001/">[ instrument 001 ]<br><span class="tiny">temporary marks</span></a>
-          <a href="/instruments/002/">[ instrument 002 ]<br><span class="tiny">small weather</span></a>
-        </div>
-      </main>
-    </div>
-    <div class="foot">best viewed with curiosity / browser unspecified / copyright is not a personality trait</div>
-  </div>
+  <main>
+    <a class="mark" href="/threshold/" aria-label="open threshold" title=""></a>
+    <section class="field">
+      <h1>A place for things that do not yet require a purpose.</h1>
+      <p>10 August 2026 — surface opened</p>
+      <p class="water"><a href="/water/2026-08-10/">Water Diary 001<br>water: yes</a></p>
+      <p class="reading"><a href="/publications/the-brush-as-a-tool/">Reading Room 001<br>The Brush as a Tool</a></p>
+      <p class="stock"><a href="/stockroom/">Stock Room 001<br>works in circulation</a></p>
+      <p class="instrument"><a href="/instruments/001/">Instrument 001<br>temporary marks</a></p>
+    </section>
+  </main>
 </body>
 </html>
