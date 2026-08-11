@@ -64,6 +64,14 @@
 - The interaction stores and transmits nothing.
 - It begins a separate class of small browser accidents: local, reversible, and allowed to be structurally wrong without turning the public-facing surface into a joke.
 
+## 11 August 2026 — the rule doubles
+
+- **Accident 002 — double rule** grows directly out of the first accident rather than appearing on the main surface.
+- Pointer movement establishes one horizontal and one vertical rule; movement itself generates a displaced second pair, so the act of obeying the first geometry manufactures another.
+- Faint scars accumulate briefly and then disappear.
+- Nothing is stored or transmitted.
+- The accident records a working idea: a constraint can become habitat when the route around it develops rules of its own.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
