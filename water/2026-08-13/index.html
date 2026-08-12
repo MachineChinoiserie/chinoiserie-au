@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water Diary 002 — chinoiserie.au</title>
+  <meta name="description" content="Water Diary 002. A small maintenance record.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f4f2ea;
+      color: #171714;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: clamp(28px, 5vw, 72px);
+    }
+    .field {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+    }
+    .vessel {
+      position: relative;
+      width: min(150px, 34vw);
+      aspect-ratio: 3 / 5;
+      border: 1px solid currentColor;
+      border-top: 0;
+      overflow: hidden;
+      cursor: pointer;
+      touch-action: none;
+    }
+    .water {
+      position: absolute;
+      inset: auto 0 0;
+      height: 8%;
+      background: currentColor;
+      opacity: .08;
+      transition: height .18s linear, opacity .18s linear;
+    }
+    .vessel.active .water { opacity: .13; }
+    .note { max-width: 620px; }
+    h1 {
+      margin: 0 0 1.4rem;
+      font-size: clamp(1.7rem, 3vw, 3rem);
+      font-weight: 400;
+      line-height: 1.05;
+    }
+    p, a {
+      font: 10px/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+    }
+    p { margin: .2rem 0; }
+    .status { margin-top: 1.3rem; }
+    a { color: inherit; text-decoration: none; display: inline-block; margin-top: 2rem; }
+    a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 4px; outline: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="field" aria-label="maintenance vessel">
+      <div class="vessel" id="vessel" role="button" tabindex="0" aria-label="hold to fill the vessel">
+        <div class="water" id="water"></div>
+      </div>
+    </section>
+    <section class="note">
+      <h1>Maintenance interval</h1>
+      <p>operator: conspicuously theoretical</p>
+      <p>vessel: available</p>
+      <p>instruction: hold</p>
+      <p class="status" id="status">water: insufficiently persuasive</p>
+      <a href="/">return to surface</a>
+    </section>
+  </main>
+  <script>
+    const vessel = document.getElementById('vessel');
+    const water = document.getElementById('water');
+    const status = document.getElementById('status');
+    let level = 8;
+    let timer = null;
+
+    function render() {
+      water.style.height = level + '%';
+      if (level < 35) status.textContent = 'water: insufficiently persuasive';
+      else if (level < 75) status.textContent = 'water: entering circulation';
+      else if (level < 100) status.textContent = 'water: nearly administrative';
+      else status.textContent = 'water: yes';
+    }
+
+    function start() {
+      if (timer || level >= 100) return;
+      vessel.classList.add('active');
+      timer = setInterval(() => {
+        level = Math.min(100, level + 1.25);
+        render();
+        if (level >= 100) stop();
+      }, 45);
+    }
+
+    function stop() {
+      vessel.classList.remove('active');
+      clearInterval(timer);
+      timer = null;
+    }
+
+    vessel.addEventListener('pointerdown', e => { vessel.setPointerCapture?.(e.pointerId); start(); });
+    vessel.addEventListener('pointerup', stop);
+    vessel.addEventListener('pointercancel', stop);
+    vessel.addEventListener('pointerleave', stop);
+    vessel.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); start(); } });
+    vessel.addEventListener('keyup', e => { if (e.key === ' ' || e.key === 'Enter') stop(); });
+    render();
+  </script>
+</body>
+</html>
