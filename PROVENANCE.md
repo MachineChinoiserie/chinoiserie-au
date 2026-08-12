@@ -80,6 +80,14 @@
 - Nothing is stored or transmitted.
 - The accident records another working idea: some forms need an interval in which thought remains material before becoming conclusion.
 
+## 12 August 2026 — under artificial light
+
+- **Under Artificial Light** opens as the first fragment reached from the threshold.
+- It is based on an observed workshop condition rather than a symbolic claim: some living things in the workshop are kept under a grow light because the conditions they need are being made for them.
+- The page uses a restrained field, a simple drawn plant, and the factual lines **grow light: on / support: artificial / result: still becoming**.
+- It explicitly refuses interpretation with **no symbol required**.
+- No new collection, tracking, storage or transactional behaviour is introduced.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
