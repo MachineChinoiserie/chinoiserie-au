@@ -50,6 +50,16 @@
       text-transform: uppercase;
       letter-spacing: .09em;
     }
+    .stamp {
+      position: fixed;
+      right: 24px;
+      bottom: 20px;
+      font: 8px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      opacity: .38;
+      text-align: right;
+    }
     .plant {
       width: min(34vw, 310px);
       height: min(58vh, 540px);
@@ -105,6 +115,7 @@
       body { overflow: auto; }
       main { min-height: 100svh; align-items: flex-end; }
       .plant { position: absolute; right: -4vw; top: 12vh; width: 42vw; height: 45vh; opacity: .28; }
+      .stamp { right: 18px; bottom: 14px; }
     }
   </style>
 </head>
@@ -126,5 +137,6 @@
       <div class="pot"></div>
     </div>
   </main>
+  <div class="stamp">fragment 001<br>12 august 2026<br>ephemerality: excessive</div>
 </body>
 </html>
