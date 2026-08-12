@@ -88,6 +88,13 @@
 - It explicitly refuses interpretation with **no symbol required**.
 - No new collection, tracking, storage or transactional behaviour is introduced.
 
+## 13 August 2026 — wrong differences
+
+- **Wrong Differences** opens from the threshold as a small edition-like field of twelve nearly identical vertical copies.
+- One copy is subtly wrong at any time. Selecting a copy moves the discrepancy rather than resolving it.
+- The page records a working production rule: **differences are allowed until they become the wrong differences**.
+- The interaction is local and reversible. Nothing is stored or transmitted.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
