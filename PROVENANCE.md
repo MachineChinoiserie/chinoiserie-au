@@ -103,6 +103,15 @@
 - Its working line is **each keystroke corrects the wrong thing**.
 - Pointer press provides the same behaviour on touch devices. Nothing is stored or transmitted.
 
+## 13 August 2026 — maintenance interval
+
+- **Water Diary 002 — Maintenance interval** opens on the public surface.
+- The diary is informed by the recurring hydration notices in which studio maintenance, minor infrastructure, moss, vessels and the human operator share one administrative ecology.
+- A nearly empty outlined vessel occupies the page. Holding it gradually raises the local water level until the status becomes **water: yes**.
+- The intermediate states are **water: insufficiently persuasive**, **water: entering circulation**, and **water: nearly administrative**.
+- Releasing early simply stops the fill; nothing is punished, stored, transmitted or remembered after refresh.
+- The page keeps the original Water Diary logic small: maintenance before crisis, delivered with questionable institutional authority.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
