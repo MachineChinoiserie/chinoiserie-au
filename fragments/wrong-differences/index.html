@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wrong Differences — chinoiserie.au</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f4f2ea;
+      color: #171714;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      padding: clamp(28px, 5vw, 72px);
+    }
+    .field {
+      display: grid;
+      place-items: center;
+    }
+    .edition {
+      width: min(76vw, 760px);
+      height: min(50vh, 420px);
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: clamp(8px, 1.2vw, 18px);
+      align-items: end;
+    }
+    .copy {
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+    }
+    .copy::before,
+    .copy::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      background: currentColor;
+    }
+    .copy::before { top: 0; height: 73%; }
+    .copy::after { bottom: 0; height: 18%; opacity: .34; }
+    .copy[data-wrong="true"]::before {
+      width: 2px;
+      transform: translateX(calc(-50% + 2px));
+    }
+    .copy[data-wrong="true"]::after {
+      height: 20%;
+      opacity: .48;
+    }
+    .copy:focus-visible { outline: 1px dotted currentColor; outline-offset: 6px; }
+    .note {
+      max-width: 540px;
+      padding-top: 3rem;
+    }
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.6rem, 3vw, 3rem);
+      line-height: 1.05;
+      font-weight: 400;
+      letter-spacing: -.02em;
+    }
+    p, a {
+      margin: 0;
+      font: 10px/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      color: inherit;
+    }
+    a { text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover, a:focus-visible { border-bottom-color: currentColor; outline: none; }
+    .meta { margin-top: 1.4rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="field" aria-label="twelve nearly identical copies">
+      <div class="edition" id="edition"></div>
+    </section>
+    <section class="note">
+      <h1>Wrong Differences</h1>
+      <p>Differences are allowed until they become the wrong differences.</p>
+      <p class="meta">12 copies / 1 discrepancy<br>select any copy to move the discrepancy<br>nothing is stored or transmitted</p>
+      <p class="meta"><a href="/threshold/">return to threshold</a></p>
+    </section>
+  </main>
+  <script>
+    const edition = document.getElementById('edition');
+    let wrong = Math.floor(Math.random() * 12);
+
+    function draw() {
+      edition.replaceChildren();
+      for (let i = 0; i < 12; i++) {
+        const copy = document.createElement('div');
+        copy.className = 'copy';
+        copy.tabIndex = 0;
+        copy.setAttribute('role', 'button');
+        copy.setAttribute('aria-label', `copy ${i + 1}`);
+        copy.dataset.wrong = i === wrong ? 'true' : 'false';
+        const move = () => { wrong = i; draw(); };
+        copy.addEventListener('click', move);
+        copy.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            move();
+          }
+        });
+        edition.appendChild(copy);
+      }
+    }
+
+    draw();
+  </script>
+</body>
+</html>
