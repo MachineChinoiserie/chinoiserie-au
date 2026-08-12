@@ -95,6 +95,14 @@
 - The page records a working production rule: **differences are allowed until they become the wrong differences**.
 - The interaction is local and reversible. Nothing is stored or transmitted.
 
+## 13 August 2026 — head typist
+
+- **Accident 004 — head typist** continues the accident chain after *pace*.
+- A sentence is already present and complete. Pressing any key does not add text; it temporarily alters the posture, spacing and position of one existing word.
+- The page therefore treats correction as a physical disturbance rather than an increase in language.
+- Its working line is **each keystroke corrects the wrong thing**.
+- Pointer press provides the same behaviour on touch devices. Nothing is stored or transmitted.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
