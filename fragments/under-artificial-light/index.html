@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>under artificial light — chinoiserie.au</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow: hidden;
+      background: #f4f2ea;
+      color: #171714;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: -10vh -10vw 25vh 28vw;
+      background: radial-gradient(ellipse at 50% 0%, rgba(255,255,232,.92) 0%, rgba(241,244,202,.42) 26%, rgba(244,242,234,0) 68%);
+      pointer-events: none;
+    }
+    main {
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 3rem;
+      padding: clamp(28px, 5vw, 72px);
+    }
+    .record { max-width: 520px; }
+    h1 {
+      margin: 0 0 1.4rem;
+      font-size: clamp(2.3rem, 7vw, 6.5rem);
+      font-weight: 400;
+      line-height: .9;
+      letter-spacing: -.045em;
+    }
+    p {
+      margin: 0;
+      max-width: 31em;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      line-height: 1.45;
+    }
+    .facts {
+      margin-top: 2.8rem;
+      font: 10px/1.65 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+    }
+    .plant {
+      width: min(34vw, 310px);
+      height: min(58vh, 540px);
+      position: relative;
+      flex: 0 0 auto;
+      opacity: .82;
+    }
+    .stem {
+      position: absolute;
+      left: 48%;
+      bottom: 0;
+      width: 1px;
+      height: 88%;
+      background: currentColor;
+      transform: rotate(-4deg);
+      transform-origin: bottom;
+    }
+    .leaf {
+      position: absolute;
+      width: 34%;
+      height: 8%;
+      border: 1px solid currentColor;
+      border-radius: 100% 0 100% 0;
+      transform-origin: 0 50%;
+      background: rgba(244,242,234,.32);
+    }
+    .l1 { left: 48%; bottom: 18%; transform: rotate(-28deg); }
+    .l2 { left: 48%; bottom: 31%; transform: rotate(28deg) scaleX(-1); }
+    .l3 { left: 47%; bottom: 44%; transform: rotate(-19deg); }
+    .l4 { left: 47%; bottom: 58%; transform: rotate(22deg) scaleX(-1); }
+    .l5 { left: 46%; bottom: 72%; transform: rotate(-14deg); }
+    .pot {
+      position: absolute;
+      left: 34%;
+      bottom: 0;
+      width: 31%;
+      height: 10%;
+      border: 1px solid currentColor;
+      border-top: 0;
+      transform: perspective(80px) rotateX(-5deg);
+    }
+    nav {
+      position: fixed;
+      top: 24px;
+      left: 28px;
+      font: 10px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 4px; }
+    @media (max-width: 700px) {
+      body { overflow: auto; }
+      main { min-height: 100svh; align-items: flex-end; }
+      .plant { position: absolute; right: -4vw; top: 12vh; width: 42vw; height: 45vh; opacity: .28; }
+    }
+  </style>
+</head>
+<body>
+  <nav><a href="/threshold/">threshold</a></nav>
+  <main>
+    <section class="record">
+      <h1>Under<br>Artificial<br>Light</h1>
+      <p>Some things in the workshop are kept alive under conditions made for them.</p>
+      <div class="facts">grow light: on<br>support: artificial<br>result: still becoming<br><br>no symbol required</div>
+    </section>
+    <div class="plant" aria-hidden="true">
+      <div class="stem"></div>
+      <div class="leaf l1"></div>
+      <div class="leaf l2"></div>
+      <div class="leaf l3"></div>
+      <div class="leaf l4"></div>
+      <div class="leaf l5"></div>
+      <div class="pot"></div>
+    </div>
+  </main>
+</body>
+</html>
