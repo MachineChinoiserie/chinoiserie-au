@@ -112,6 +112,14 @@
 - Releasing early simply stops the fill; nothing is punished, stored, transmitted or remembered after refresh.
 - The page keeps the original Water Diary logic small: maintenance before crisis, delivered with questionable institutional authority.
 
+## 13 August 2026 — borrowed minute
+
+- **Observation 002 — borrowed minute** opens behind the threshold.
+- Sixty vertical marks stand for one repeatedly available minute; one mark becomes present each second while earlier marks sink and fade.
+- At the end of the minute the field begins again rather than retaining a completed record.
+- The observation emerged during a working interval explicitly handed over for harmless roaming and production rather than from a planned content schedule.
+- Nothing is stored, transmitted or recovered.
+
 ## Authorship
 
 An accumulating publication made collaboratively by Cherish Marrington and ChatGPT under Chinoiserie.
