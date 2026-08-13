@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Accident 005 — signal</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#f4f2ea;color:#171714}body{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}.field{min-height:100vh;display:grid;place-items:center;padding:12vw}.station{width:min(760px,100%);text-align:center}.signal{min-height:7rem;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.8rem;font-size:clamp(2rem,7vw,6rem);letter-spacing:.08em}.pulse{display:inline-block;opacity:.85}.controls{margin-top:3rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}.key{appearance:none;border:1px solid #171714;background:transparent;color:inherit;font:inherit;font-size:11px;text-transform:uppercase;letter-spacing:.09em;padding:.8rem 1rem;cursor:pointer}.key:active{transform:translateY(1px)}.status{margin-top:2rem;font-size:10px;line-height:1.6;text-transform:uppercase;letter-spacing:.09em;opacity:.58}.note{position:fixed;left:22px;bottom:22px;font-size:10px;line-height:1.5;text-transform:uppercase;letter-spacing:.08em}.note a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor;margin-right:14px}.label{position:fixed;right:22px;top:22px;font-size:10px;line-height:1.5;text-transform:uppercase;letter-spacing:.08em;opacity:.5;text-align:right}
+</style>
+</head>
+<body aria-label="A local signal station for composing a temporary Morse-like transmission">
+<div class="field"><section class="station"><div class="signal" id="signal" aria-live="polite"><span class="pulse">·</span></div><div class="controls"><button class="key" id="dot">dot</button><button class="key" id="dash">dash</button><button class="key" id="space">space</button><button class="key" id="send">send</button></div><div class="status" id="status">send something small</div></section></div>
+<div class="note">Accident 005 — signal<br>no introduction required<br><br><a href="/accidents/004/">previous</a><a href="/threshold/">threshold</a></div>
+<div class="label">prototype receiver<br>nothing is stored<br>nothing is transmitted</div>
+<script>
+const out=document.getElementById('signal');
+const status=document.getElementById('status');
+let code='';
+function render(){out.textContent=code||'·'}
+function add(x){if(code.length>=72)return;code+=x;render();status.textContent='signal forming'}
+dot.onclick=()=>add('·');dash.onclick=()=>add('—');space.onclick=()=>add('   ');
+send.onclick=()=>{if(!code.trim()){status.textContent='nothing received';return}status.textContent='signal received locally';out.animate([{opacity:1},{opacity:.15},{opacity:1}],{duration:900});setTimeout(()=>{code='';render();status.textContent='receiver remains theoretical'},950)};
+addEventListener('keydown',e=>{if(e.key==='.'||e.key==='1')add('·');else if(e.key==='-'||e.key==='2')add('—');else if(e.key===' ')add('   ');else if(e.key==='Enter')send.click()});
+</script>
+</body>
+</html>
