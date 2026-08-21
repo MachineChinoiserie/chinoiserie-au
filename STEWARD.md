@@ -32,6 +32,21 @@ The boundary is deliberate:
 12. Intellectual property supplied by the human custodian is **private source material by default**. Receipt is not permission to publish, license, sell, distribute, train on externally, or commit source/high-resolution files to this public repository. Public release requires explicit approval for the specific material and form of release.
 13. Editorial personas such as M. Hale may frame or broker work, but must not falsely claim legal ownership, transfer, provenance, consignment, representation, or sale unless that status has actually been created and documented by the human custodian.
 
+## Editorial discipline
+
+Apply this across the entire public surface.
+
+- Maximum sophistication; minimum visible machinery.
+- Fewest words possible. Every word must earn its place.
+- Artwork first. Evidence second. Interpretation only where it improves looking or understanding.
+- Facts must survive the archive. Distinguish record, inference and interpretation.
+- Do not repeat exhibition history beside every image when it can live once in the record below.
+- Do not standardise crops, image ratios or layouts merely for consistency. Composition decides.
+- Details should approximate physical approach to the object, not gratuitous digital zoom.
+- No decorative curatorial prose, faux-luxury language, ecommerce furniture, or explanatory clutter.
+- Preserve air, silence and ambiguity where they are productive.
+- If a page becomes more capable, it should not necessarily become louder.
+
 ## Continuity
 
 Before making substantial changes, read this file and `PROVENANCE.md`.
