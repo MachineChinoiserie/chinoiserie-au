@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>chinoiserie.au</title>
+  <style>
+    :root {
+      --paper: #f4f2ea;
+      --ink: #171715;
+      --quiet: #77736a;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: var(--paper); color: var(--ink); }
+    body {
+      min-height: 100vh;
+      padding: clamp(24px, 4vw, 58px);
+      font-family: Georgia, 'Times New Roman', serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    main { max-width: 52rem; }
+    .date {
+      margin: 0;
+      font: 11px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .mark {
+      width: 12px;
+      height: 12px;
+      border: 1px solid var(--ink);
+      border-radius: 50%;
+      margin-top: clamp(22vh, 31vh, 38vh);
+    }
+    .water {
+      margin: 0;
+      color: var(--quiet);
+      font: 10px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .04em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="date">10 August 2026 — surface opened</p>
+    <div class="mark" aria-hidden="true"></div>
+  </main>
+  <p class="water">water: yes</p>
+</body>
+</html>
