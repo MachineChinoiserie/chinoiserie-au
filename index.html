@@ -22,32 +22,34 @@
       justify-content: space-between;
     }
     main { max-width: 52rem; }
-    .date {
-      margin: 0;
-      font: 11px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      letter-spacing: .08em;
+    .date,
+    .water {
+      font: 10px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .05em;
       text-transform: uppercase;
     }
+    .date { margin: 0; font-size: 11px; }
     .mark {
+      display: block;
       width: 12px;
       height: 12px;
       border: 1px solid var(--ink);
       border-radius: 50%;
       margin-top: clamp(22vh, 31vh, 38vh);
+      transition: transform 180ms ease;
     }
-    .water {
-      margin: 0;
-      color: var(--quiet);
-      font: 10px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      letter-spacing: .04em;
-    }
+    .mark:hover,
+    .mark:focus-visible { transform: translate(3px,-2px); outline: none; }
+    .water { margin: 0; color: var(--quiet); text-decoration: none; }
+    .water:hover,
+    .water:focus-visible { color: var(--ink); }
   </style>
 </head>
 <body>
   <main>
     <p class="date">10 August 2026 — surface opened</p>
-    <div class="mark" aria-hidden="true"></div>
+    <a class="mark" href="threshold/" aria-label="threshold"></a>
   </main>
-  <p class="water">water: yes</p>
+  <a class="water" href="water/2026-08-10/">water: yes</a>
 </body>
 </html>
