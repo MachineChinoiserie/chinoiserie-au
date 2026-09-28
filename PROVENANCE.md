@@ -4,9 +4,9 @@
 
 The surviving room system was read from `MachineChinoiserie/chinoiserie-au` at `2c016047cde47de56965d14fd7b5b0597fad24c7`. All 23 files were recovered and verified against their Git blob hashes. Its 21 HTML pages and existing routes form the base of this change. The previous successful Pages deployment was workflow run `33451059105`, with environment URL `https://chinoiserie.au/`.
 
-The original conversation survives as **Website Setup Plans.pdf**, 243 pages. Page coordinates and the archive identity are in `STEWARD.md`. Its design directions are primary evidence of the recorded conversation; historical statements about completed code require a separate repository check.
+A preserved private archive contains **Website Setup Plans.pdf**, a 243-page record of the original conversation. Its design directions are primary evidence of the recorded conversation; historical statements about completed code require a separate repository check. Archive identifiers and storage coordinates remain private.
 
-Three prepared web reproductions were matched visually to the illustrated works on page 5 of **signed_FAC Loan Agreement_Cherish Marrington copy.pdf**. The schedule identifies Cherish Marrington, Opium Spirit World #1, #2 and #3, 2022, ink drawing on 310gsm cotton rag, framed, recorded size 73 × 93 cm each. The source agreement remains private. Its contact, financial and contractual contents are not reproduced here.
+Three prepared web reproductions were matched visually to an illustrated private loan schedule identifying Cherish Marrington, Opium Spirit World #1, #2 and #3, 2022, ink drawing on 310gsm cotton rag, framed, recorded size 73 × 93 cm each. The source agreement remains private; its filename, storage location, contact, financial and contractual contents are not reproduced here.
 
 | Public copy | Existing source filename | SHA-256 of unchanged image bytes |
 | --- | --- | --- |
@@ -18,7 +18,7 @@ Each is an existing 2200 × 1600 JPEG prepared for the web. No artwork pixels we
 
 ## INHERITED
 
-The room names, routes, serif/monospace split, paper/ink palette, negative space and existing interpretive paragraph about an “unstable ecology” come from the surviving site. The seven-work body is also described in the original conversation, including pages 97–99. The critical description is editorial interpretation, not an object-identification record.
+The room names, routes, serif/monospace split, paper/ink palette, negative space and existing interpretive paragraph about an “unstable ecology” come from the surviving site. The seven-work body is also described in the private historical record. The critical description is editorial interpretation, not an object-identification record.
 
 ## INFERENCE / CURRENT EDITORIAL DECISION
 
@@ -28,6 +28,10 @@ The current user requested the least new construction and explicitly allowed OSW
 
 The remaining prepared images were not assigned new identities or renumbered. Complete edition reconciliation, current stock and prices are not established by this launch. No current sales offer is made.
 
-The current repository history is not the original build history described in Website Setup Plans. Exact missing historical code is still unresolved; the surviving reconstruction and its parent commits remain in Git history.
+The current repository history is not the original build history described in the private historical record. Exact missing historical code is still unresolved; the surviving reconstruction and its parent commits remain in Git history.
 
 At inspection, `illegaltimeformat.com` served a GoDaddy contact/holding page. No separate executable build was recovered in the accessible sources. Its domain, records and unused material were left intact. The distinction between a web encounter and physical editions/production masters remains useful and is preserved here.
+
+## PUBLIC / PRIVATE BOUNDARY
+
+This public record may identify the class of private evidence used to support a published decision, but it must not expose private archive identifiers, storage coordinates, access details, correspondence, or non-public contractual material. Auditability does not require publishing the route into the private archive.
